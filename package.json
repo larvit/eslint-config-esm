@@ -16,6 +16,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/larvit/eslint-config-ems.git"
+    "url": "git+https://github.com/larvit/eslint-config-esm.git"
   }
 }
