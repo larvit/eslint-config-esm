@@ -2,7 +2,7 @@
   "name": "@larvit/eslint-config-esm",
   "version": "1.0.1",
   "license": "MIT",
-  "packageManager": "yarn@3.2.4",
+  "packageManager": "yarn@3.3.0",
   "main": "index.js",
   "dependencies": {
     "eslint-plugin-simple-import-sort": "8.0.0"
