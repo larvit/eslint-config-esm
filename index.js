@@ -26,7 +26,7 @@ module.exports = {
 		"func-call-spacing": ["off"],
 		"func-style": ["error", "declaration", { "allowArrowFunctions": true }],
 		"function-paren-newline": ["error", "multiline"],
-		"id-length": ["error", { "exceptions": ["cb", "el", "i", "i2", "id", "ID", "t", "to"], "min": 3 }],
+		"id-length": ["error", { "exceptions": ["_", "cb", "el", "i", "i2", "id", "ID", "t", "to"], "min": 3 }],
 		"indent": ["error", "tab"],
 		"key-spacing": ["error", { "beforeColon": false, "afterColon": true, "mode": "strict" }],
 		"keyword-spacing": ["off"],
