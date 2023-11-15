@@ -2,14 +2,14 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 6
-  cacheKey: 8
+  version: 8
+  cacheKey: 10
 
 "@larvit/eslint-config-esm@workspace:.":
   version: 0.0.0-use.local
   resolution: "@larvit/eslint-config-esm@workspace:."
   dependencies:
-    eslint-plugin-simple-import-sort: 10.0.0
+    eslint-plugin-simple-import-sort: "npm:10.0.0"
   peerDependencies:
     eslint: ">= 8"
   languageName: unknown
@@ -20,6 +20,6 @@ __metadata:
   resolution: "eslint-plugin-simple-import-sort@npm:10.0.0"
   peerDependencies:
     eslint: ">=5.0.0"
-  checksum: 23221ff63f80f9c52da807d388ee8a51bc36a3b73345f60ec886e7973c28d75eb1d1e47f7f2916a7c1f94a1b5037b1450356a64a8fbd58096fd6bee57c6e3e48
+  checksum: 462187d3c137ba0986586a4759fe57c1c3fc1850750cb785f335b9b235346a1d96ebfcfb558847fc1a3b319718f2736178a66a61a0c184c86d48b21c1e0df26b
   languageName: node
   linkType: hard
