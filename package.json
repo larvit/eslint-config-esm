@@ -1,15 +1,28 @@
 {
   "name": "@larvit/eslint-config-esm",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "license": "MIT",
-  "packageManager": "yarn@4.6.0",
+  "type": "module",
   "main": "index.js",
+  "exports": "./index.js",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
   "dependencies": {
-    "eslint-plugin-simple-import-sort": "12.1.1"
+    "@eslint/js": "10.0.1",
+    "@stylistic/eslint-plugin": "5.10.0",
+    "eslint-plugin-simple-import-sort": "13.0.0",
+    "globals": "17.6.0"
+  },
+  "devDependencies": {
+    "eslint": "10.5.0"
   },
   "peerDependencies": {
-    "eslint": ">= 8"
+    "eslint": ">= 9"
   },
+  "files": [
+    "index.js"
+  ],
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"

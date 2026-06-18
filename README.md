@@ -1,20 +1,29 @@
 # @larvit/eslint-config-esm
 
+Shareable [flat config](https://eslint.org/docs/latest/use/configure/configuration-files) for ESLint 9+ targeting modern ESM JavaScript.
+
 ## Installation
 
-`npm i -d eslint @larvit/eslint-config-esm` or `yarn add -D eslint @larvit/eslint-config-esm`
+```sh
+npm install --save-dev eslint globals @larvit/eslint-config-esm
+```
 
 ## Usage
 
-In your local eslint configuration, for example `.eslintrc.json` for a node application extend this config like this:
+In your `eslint.config.js`:
 
-```json
-{
-	"extends": [
-		"@larvit/esm"
-	],
-	"env": {
-		"node": true
-	}
-}
+```js
+import larvit from "@larvit/eslint-config-esm";
+import globals from "globals";
+
+export default [
+	...larvit,
+	{
+		languageOptions: {
+			globals: globals.node,
+		},
+	},
+];
 ```
+
+`globals.node` here is the flat-config replacement for the old `env: { node: true }`. Use `globals.browser` for browser code.
